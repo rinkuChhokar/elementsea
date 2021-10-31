@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Nihonium</title>
+
+    <style>
+
+      a{
+        text-decoration: none;
+      }
+      
+      #div1{
+        background-color: #242424;
+
+      }
+
+      #div1 h3{
+        color: white;
+      }
+
+      #maindiv{
+        padding-top: 90px;
+
+      }
+
+      #section{
+        border: solid 2px #dfe1e5;
+      }
+
+      #footer{
+        background-color:#242424 ;
+        
+      }
+
+      #voice:hover{
+        cursor: pointer;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    {% include "header1.html" %}
+    {% block header %}
+    {% endblock %}
+
+    <div id="maindiv" class="container shadow mb-5">
+
+      <div class="d-flex justify-content-center">
+       <svg width="332" height="346" viewBox="0 0 332 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_45:44)">
+<rect width="320" height="333" fill="url(#paint0_linear_45:44)"/>
+<path d="M35.2388 55H31.606V30.918L24.3208 33.5938V30.3125L34.6724 26.4258H35.2388V55ZM57.6997 55H54.0669V30.918L46.7817 33.5938V30.3125L57.1333 26.4258H57.6997V55ZM73.5396 39.0234H76.2544C77.9601 38.9974 79.3013 38.5482 80.2778 37.6758C81.2544 36.8034 81.7427 35.625 81.7427 34.1406C81.7427 30.8073 80.0825 29.1406 76.7622 29.1406C75.1997 29.1406 73.9497 29.5898 73.0122 30.4883C72.0877 31.3737 71.6255 32.5521 71.6255 34.0234H68.0122C68.0122 31.7708 68.8325 29.9023 70.4731 28.418C72.1268 26.9206 74.2231 26.1719 76.7622 26.1719C79.4445 26.1719 81.5474 26.8815 83.0708 28.3008C84.5942 29.7201 85.356 31.6927 85.356 34.2188C85.356 35.4557 84.9523 36.6536 84.145 37.8125C83.3507 38.9714 82.2635 39.8372 80.8833 40.4102C82.4458 40.9049 83.6502 41.7253 84.4966 42.8711C85.356 44.0169 85.7856 45.4167 85.7856 47.0703C85.7856 49.6224 84.9523 51.6471 83.2856 53.1445C81.619 54.6419 79.451 55.3906 76.7817 55.3906C74.1125 55.3906 71.938 54.668 70.2583 53.2227C68.5916 51.7773 67.7583 49.8698 67.7583 47.5H71.3911C71.3911 48.9974 71.8794 50.1953 72.856 51.0938C73.8325 51.9922 75.1411 52.4414 76.7817 52.4414C78.5265 52.4414 79.8612 51.9857 80.7856 51.0742C81.7101 50.1628 82.1724 48.8542 82.1724 47.1484C82.1724 45.4948 81.6646 44.2253 80.6489 43.3398C79.6333 42.4544 78.1685 41.9987 76.2544 41.9727H73.5396V39.0234ZM91.1958 53.1055C91.1958 52.4805 91.3781 51.9596 91.7427 51.543C92.1203 51.1263 92.6802 50.918 93.4224 50.918C94.1646 50.918 94.7244 51.1263 95.1021 51.543C95.4927 51.9596 95.688 52.4805 95.688 53.1055C95.688 53.7044 95.4927 54.2057 95.1021 54.6094C94.7244 55.013 94.1646 55.2148 93.4224 55.2148C92.6802 55.2148 92.1203 55.013 91.7427 54.6094C91.3781 54.2057 91.1958 53.7044 91.1958 53.1055Z" fill="white"/>
+<path d="M158.781 217H139.934L68.3516 107.43V217H49.5039V74.8125H68.3516L140.129 184.871V74.8125H158.781V217ZM207.316 124.129C215.324 114.298 225.741 109.383 238.566 109.383C260.897 109.383 272.16 121.98 272.355 147.176V217H254.289V147.078C254.224 139.461 252.466 133.829 249.016 130.184C245.63 126.538 240.324 124.715 233.098 124.715C227.238 124.715 222.095 126.277 217.668 129.402C213.241 132.527 209.79 136.629 207.316 141.707V217H189.25V67H207.316V124.129Z" fill="white"/>
+<path d="M83.4453 273H78.7334L60.8379 245.607V273H56.126V237.453H60.8379L78.7822 264.968V237.453H83.4453V273ZM95.9697 273H91.4531V246.584H95.9697V273ZM91.0869 239.577C91.0869 238.845 91.3066 238.226 91.7461 237.722C92.2018 237.217 92.8691 236.965 93.748 236.965C94.627 236.965 95.2943 237.217 95.75 237.722C96.2057 238.226 96.4336 238.845 96.4336 239.577C96.4336 240.31 96.2057 240.92 95.75 241.408C95.2943 241.896 94.627 242.141 93.748 242.141C92.8691 242.141 92.2018 241.896 91.7461 241.408C91.3066 240.92 91.0869 240.31 91.0869 239.577ZM107.737 249.782C109.739 247.325 112.343 246.096 115.55 246.096C121.132 246.096 123.948 249.245 123.997 255.544V273H119.48V255.52C119.464 253.615 119.025 252.207 118.162 251.296C117.316 250.384 115.989 249.929 114.183 249.929C112.718 249.929 111.432 250.319 110.325 251.101C109.218 251.882 108.356 252.907 107.737 254.177V273H103.221V235.5H107.737V249.782ZM129.563 259.548C129.563 256.96 130.068 254.632 131.077 252.565C132.103 250.498 133.519 248.903 135.325 247.78C137.148 246.657 139.223 246.096 141.551 246.096C145.148 246.096 148.053 247.341 150.267 249.831C152.496 252.321 153.611 255.633 153.611 259.768V260.085C153.611 262.657 153.115 264.968 152.122 267.019C151.146 269.053 149.738 270.64 147.898 271.779C146.076 272.919 143.976 273.488 141.6 273.488C138.019 273.488 135.114 272.243 132.884 269.753C130.67 267.263 129.563 263.967 129.563 259.865V259.548ZM134.104 260.085C134.104 263.015 134.78 265.367 136.131 267.141C137.498 268.915 139.321 269.802 141.6 269.802C143.895 269.802 145.717 268.907 147.068 267.116C148.419 265.31 149.095 262.787 149.095 259.548C149.095 256.651 148.403 254.307 147.02 252.517C145.652 250.71 143.829 249.807 141.551 249.807C139.321 249.807 137.522 250.694 136.155 252.468C134.788 254.242 134.104 256.781 134.104 260.085ZM163.548 246.584L163.694 249.904C165.713 247.365 168.349 246.096 171.604 246.096C177.187 246.096 180.003 249.245 180.052 255.544V273H175.535V255.52C175.519 253.615 175.079 252.207 174.217 251.296C173.37 250.384 172.044 249.929 170.237 249.929C168.772 249.929 167.487 250.319 166.38 251.101C165.273 251.882 164.41 252.907 163.792 254.177V273H159.275V246.584H163.548ZM191.771 273H187.254V246.584H191.771V273ZM186.888 239.577C186.888 238.845 187.107 238.226 187.547 237.722C188.003 237.217 188.67 236.965 189.549 236.965C190.428 236.965 191.095 237.217 191.551 237.722C192.007 238.226 192.234 238.845 192.234 239.577C192.234 240.31 192.007 240.92 191.551 241.408C191.095 241.896 190.428 242.141 189.549 242.141C188.67 242.141 188.003 241.896 187.547 241.408C187.107 240.92 186.888 240.31 186.888 239.577ZM215.33 270.388C213.572 272.455 210.993 273.488 207.591 273.488C204.775 273.488 202.627 272.674 201.146 271.047C199.681 269.403 198.94 266.978 198.924 263.771V246.584H203.44V263.649C203.44 267.653 205.068 269.655 208.323 269.655C211.774 269.655 214.069 268.369 215.208 265.798V246.584H219.725V273H215.428L215.33 270.388ZM230.857 246.584L230.979 249.514C232.916 247.235 235.529 246.096 238.816 246.096C242.511 246.096 245.026 247.512 246.36 250.344C247.239 249.074 248.379 248.049 249.778 247.268C251.194 246.486 252.863 246.096 254.783 246.096C260.577 246.096 263.523 249.164 263.621 255.3V273H259.104V255.568C259.104 253.68 258.673 252.272 257.811 251.345C256.948 250.401 255.499 249.929 253.465 249.929C251.788 249.929 250.397 250.433 249.29 251.442C248.183 252.435 247.54 253.778 247.361 255.471V273H242.82V255.69C242.82 251.849 240.94 249.929 237.181 249.929C234.218 249.929 232.192 251.19 231.102 253.713V273H226.585V246.584H230.857Z" fill="white"/>
+<path d="M150.747 313H136.772V311.052L144.155 302.849C145.249 301.608 146.001 300.603 146.411 299.831C146.831 299.05 147.041 298.244 147.041 297.414C147.041 296.301 146.704 295.388 146.03 294.675C145.356 293.962 144.458 293.605 143.335 293.605C141.987 293.605 140.938 293.991 140.186 294.763C139.443 295.524 139.072 296.589 139.072 297.956H136.362C136.362 295.993 136.992 294.406 138.252 293.195C139.521 291.984 141.216 291.379 143.335 291.379C145.317 291.379 146.885 291.901 148.037 292.946C149.189 293.981 149.766 295.363 149.766 297.092C149.766 299.191 148.428 301.691 145.752 304.592L140.039 310.788H150.747V313ZM166.553 297.238C166.553 298.303 166.27 299.25 165.703 300.08C165.146 300.91 164.39 301.56 163.433 302.028C164.546 302.507 165.425 303.205 166.069 304.123C166.724 305.041 167.051 306.081 167.051 307.243C167.051 309.089 166.426 310.559 165.176 311.652C163.936 312.746 162.3 313.293 160.269 313.293C158.218 313.293 156.572 312.746 155.332 311.652C154.102 310.549 153.486 309.079 153.486 307.243C153.486 306.091 153.799 305.051 154.424 304.123C155.059 303.195 155.933 302.492 157.046 302.014C156.099 301.545 155.352 300.896 154.805 300.065C154.258 299.235 153.984 298.293 153.984 297.238C153.984 295.441 154.561 294.016 155.713 292.961C156.865 291.906 158.384 291.379 160.269 291.379C162.144 291.379 163.657 291.906 164.81 292.961C165.972 294.016 166.553 295.441 166.553 297.238ZM164.341 307.185C164.341 305.993 163.96 305.021 163.198 304.27C162.446 303.518 161.46 303.142 160.239 303.142C159.019 303.142 158.037 303.513 157.295 304.255C156.562 304.997 156.196 305.974 156.196 307.185C156.196 308.396 156.553 309.348 157.266 310.041C157.988 310.734 158.989 311.081 160.269 311.081C161.538 311.081 162.534 310.734 163.257 310.041C163.979 309.338 164.341 308.386 164.341 307.185ZM160.269 293.605C159.204 293.605 158.34 293.938 157.676 294.602C157.021 295.256 156.694 296.149 156.694 297.282C156.694 298.366 157.017 299.245 157.661 299.919C158.315 300.583 159.185 300.915 160.269 300.915C161.353 300.915 162.217 300.583 162.861 299.919C163.516 299.245 163.843 298.366 163.843 297.282C163.843 296.198 163.506 295.314 162.832 294.631C162.158 293.947 161.304 293.605 160.269 293.605ZM181.904 305.837H184.863V308.049H181.904V313H179.18V308.049H169.468V306.452L179.019 291.672H181.904V305.837ZM172.544 305.837H179.18V295.378L178.857 295.964L172.544 305.837Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_45:44" x="0" y="0" width="332" height="346" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="8" dy="9"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_45:44"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_45:44" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_45:44" x1="160" y1="0" x2="160" y2="333" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007E58"/>
+<stop offset="1" stop-color="#2F4D7A" stop-opacity="0.95"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+          
+          <div id="section" class="container mt-3">
+              <h4 >About</h4>
+              <p>Nihonium is a synthetic chemical element with the symbol Nh and atomic number 113. It is extremely radioactive; its most stable known isotope, nihonium-286, has a half-life of about 10 seconds. In the periodic table, nihonium is a transactinide element in the p-block. It is a member of period 7 and group 13.<a href="https://en.wikipedia.org/wiki/Nihonium">Wikipedia</a></p>
+              <div class="mb-3"><img id="voice" title="click to listen" src="../static/images/loud-speaker.png" onclick="mytext()" height="30px" width="30px">
+              </div>
+              
+              <div style="border-top: solid 2px #dfe1e5;"><p style="font-weight:bold">Image </p> 
+                <img class="img-fluid" style="pointer-events: none;" src="https://www.thoughtco.com/thmb/f4TDCF5ZXa3k6wqvi8eZ-yFwrc0=/1881x1411/smart/filters:no_upscale()/distorted-concentric-light-circles-light-painting-534360517-58865a615f9b58bdb3aa07f2.jpg" height="auto" width="auto"><br>
+                <p>Image link-https://www.thoughtco.com/thmb/f4TDCF5ZXa3k6wqvi8eZ-yFwrc0=/1881x1411/smart/filters:no_upscale()/distorted-concentric-light-circles-light-painting-534360517-58865a615f9b58bdb3aa07f2.jpg</p>
+              </div>
+
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Symbol- </span>Nh</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic mass- </span> 286 u</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic number- </span>113</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered- </span>2004</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered by- </span><a  href="#">  Riken (Japan, first undisputed claim 2004)
+              JINR (Russia) and Livermore (US, first announcement 2003)
+              </a> </p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Electrons per shell- </span>2, 8, 18, 32, 32, 18, 3 (predicted)</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Oxidation states- </span>  (−1), (+1), (+3), (+5) (predicted)</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Group- </span>group 13 (boron group)</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Appearance - </span>NA</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Van der Waals radius - </span>NA</p></div>
+
+
+
+
+
+
+
+      </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+
+      
+
+      
+      
+    </div>
+
+
+    {% include "base.html" %}
+    {% block footer %}
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+   <script>
+      function mytext()
+      {
+          
+          var msg = new SpeechSynthesisUtterance();  
+          msg.text ="Nihonium is a synthetic chemical element with the symbol N h and atomic number 113. It is extremely radioactive; its most stable known isotope, nihonium-286, has a half-life of about 10 seconds."; 
+          msg.lang = 'hi-IN';
+          speechSynthesis.speak(msg);
+
+      }
+    
+   </script>
+  </body>
+</html>  

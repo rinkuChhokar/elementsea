@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Tin</title>
+
+    <style>
+
+      a{
+        text-decoration: none;
+      }
+      
+      #div1{
+        background-color: #242424;
+
+      }
+
+      #div1 h3{
+        color: white;
+      }
+
+      #maindiv{
+        padding-top: 90px;
+
+      }
+
+      #section{
+        border: solid 2px #dfe1e5;
+      }
+
+      #footer{
+        background-color:#242424 ;
+        
+      }
+
+      #voice:hover{
+        cursor: pointer;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    {% include "header1.html" %}
+    {% block header %}
+    {% endblock %}
+
+    <div id="maindiv" class="container shadow mb-5">
+
+      <div class="d-flex justify-content-center">
+        <svg width="332" height="346" viewBox="0 0 332 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_3:5)">
+<rect width="320" height="333" fill="url(#paint0_linear_3:5)"/>
+<path d="M25.0234 40.7422L26.4688 26.5625H41.0391V29.9023H29.5352L28.6758 37.6562C30.069 36.8359 31.651 36.4258 33.4219 36.4258C36.013 36.4258 38.0703 37.2852 39.5938 39.0039C41.1172 40.7096 41.8789 43.0208 41.8789 45.9375C41.8789 48.8672 41.0846 51.1784 39.4961 52.8711C37.9206 54.5508 35.7135 55.3906 32.875 55.3906C30.362 55.3906 28.3112 54.694 26.7227 53.3008C25.1341 51.9076 24.2292 49.9805 24.0078 47.5195H27.4258C27.6471 49.1471 28.2266 50.3776 29.1641 51.2109C30.1016 52.0312 31.3385 52.4414 32.875 52.4414C34.5547 52.4414 35.8698 51.8685 36.8203 50.7227C37.7839 49.5768 38.2656 47.9948 38.2656 45.9766C38.2656 44.0755 37.7448 42.5521 36.7031 41.4062C35.6745 40.2474 34.3008 39.668 32.582 39.668C31.0065 39.668 29.7695 40.013 28.8711 40.7031L27.9141 41.4844L25.0234 40.7422ZM63.6562 42.8711C63.6562 47.1029 62.9336 50.2474 61.4883 52.3047C60.043 54.362 57.7839 55.3906 54.7109 55.3906C51.6771 55.3906 49.431 54.388 47.9727 52.3828C46.5143 50.3646 45.7591 47.3568 45.707 43.3594V38.5352C45.707 34.3555 46.4297 31.25 47.875 29.2188C49.3203 27.1875 51.5859 26.1719 54.6719 26.1719C57.7318 26.1719 59.9844 27.1549 61.4297 29.1211C62.875 31.0742 63.6172 34.0951 63.6562 38.1836V42.8711ZM60.043 37.9297C60.043 34.8698 59.6133 32.6432 58.7539 31.25C57.8945 29.8438 56.5339 29.1406 54.6719 29.1406C52.8229 29.1406 51.4753 29.8372 50.6289 31.2305C49.7826 32.6237 49.3464 34.7656 49.3203 37.6562V43.4375C49.3203 46.5104 49.763 48.7826 50.6484 50.2539C51.5469 51.7122 52.901 52.4414 54.7109 52.4414C56.4948 52.4414 57.8164 51.7513 58.6758 50.3711C59.5482 48.9909 60.0039 46.8164 60.043 43.8477V37.9297ZM68.7344 53.1055C68.7344 52.4805 68.9167 51.9596 69.2812 51.543C69.6589 51.1263 70.2188 50.918 70.9609 50.918C71.7031 50.918 72.263 51.1263 72.6406 51.543C73.0312 51.9596 73.2266 52.4805 73.2266 53.1055C73.2266 53.7044 73.0312 54.2057 72.6406 54.6094C72.263 55.013 71.7031 55.2148 70.9609 55.2148C70.2188 55.2148 69.6589 55.013 69.2812 54.6094C68.9167 54.2057 68.7344 53.7044 68.7344 53.1055Z" fill="white"/>
+<path d="M103.398 153.621C87.3177 148.999 75.599 143.335 68.2422 136.629C60.9505 129.858 57.3047 121.525 57.3047 111.629C57.3047 100.431 61.7643 91.1862 70.6836 83.8945C79.668 76.5378 91.3216 72.8594 105.645 72.8594C115.41 72.8594 124.102 74.7474 131.719 78.5234C139.401 82.2995 145.326 87.5078 149.492 94.1484C153.724 100.789 155.84 108.048 155.84 115.926H136.992C136.992 107.332 134.258 100.594 128.789 95.7109C123.32 90.763 115.605 88.2891 105.645 88.2891C96.3997 88.2891 89.1732 90.3398 83.9648 94.4414C78.8216 98.4779 76.25 104.109 76.25 111.336C76.25 117.13 78.6914 122.046 83.5742 126.082C88.5221 130.053 96.888 133.699 108.672 137.02C120.521 140.34 129.766 144.018 136.406 148.055C143.112 152.026 148.06 156.681 151.25 162.02C154.505 167.358 156.133 173.641 156.133 180.867C156.133 192.391 151.641 201.635 142.656 208.602C133.672 215.503 121.66 218.953 106.621 218.953C96.8555 218.953 87.7409 217.098 79.2773 213.387C70.8138 209.611 64.2708 204.467 59.6484 197.957C55.0911 191.447 52.8125 184.057 52.8125 175.789H71.6602C71.6602 184.383 74.8177 191.186 81.1328 196.199C87.513 201.147 96.0091 203.621 106.621 203.621C116.517 203.621 124.102 201.603 129.375 197.566C134.648 193.53 137.285 188.029 137.285 181.062C137.285 174.096 134.844 168.725 129.961 164.949C125.078 161.108 116.224 157.332 103.398 153.621ZM194.512 111.336L195.098 124.617C203.171 114.461 213.717 109.383 226.738 109.383C249.069 109.383 260.332 121.98 260.527 147.176V217H242.461V147.078C242.396 139.461 240.638 133.829 237.188 130.184C233.802 126.538 228.496 124.715 221.27 124.715C215.41 124.715 210.267 126.277 205.84 129.402C201.413 132.527 197.962 136.629 195.488 141.707V217H177.422V111.336H194.512Z" fill="white"/>
+<path d="M153.687 241.311H142.261V273H137.598V241.311H126.196V237.453H153.687V241.311ZM163.159 273H158.643V246.584H163.159V273ZM158.276 239.577C158.276 238.845 158.496 238.226 158.936 237.722C159.391 237.217 160.059 236.965 160.938 236.965C161.816 236.965 162.484 237.217 162.939 237.722C163.395 238.226 163.623 238.845 163.623 239.577C163.623 240.31 163.395 240.92 162.939 241.408C162.484 241.896 161.816 242.141 160.938 242.141C160.059 242.141 159.391 241.896 158.936 241.408C158.496 240.92 158.276 240.31 158.276 239.577ZM174.683 246.584L174.829 249.904C176.847 247.365 179.484 246.096 182.739 246.096C188.322 246.096 191.138 249.245 191.187 255.544V273H186.67V255.52C186.654 253.615 186.214 252.207 185.352 251.296C184.505 250.384 183.179 249.929 181.372 249.929C179.907 249.929 178.621 250.319 177.515 251.101C176.408 251.882 175.545 252.907 174.927 254.177V273H170.41V246.584H174.683Z" fill="white"/>
+<path d="M123.679 313H120.954V294.938L115.49 296.945V294.484L123.254 291.569H123.679V313ZM140.524 313H137.8V294.938L132.336 296.945V294.484L140.1 291.569H140.524V313ZM161.398 297.238C161.398 298.303 161.115 299.25 160.549 300.08C159.992 300.91 159.235 301.56 158.278 302.028C159.392 302.507 160.271 303.205 160.915 304.123C161.569 305.041 161.896 306.081 161.896 307.243C161.896 309.089 161.271 310.559 160.021 311.652C158.781 312.746 157.146 313.293 155.114 313.293C153.063 313.293 151.418 312.746 150.178 311.652C148.947 310.549 148.332 309.079 148.332 307.243C148.332 306.091 148.645 305.051 149.27 304.123C149.904 303.195 150.778 302.492 151.892 302.014C150.944 301.545 150.197 300.896 149.65 300.065C149.104 299.235 148.83 298.293 148.83 297.238C148.83 295.441 149.406 294.016 150.559 292.961C151.711 291.906 153.229 291.379 155.114 291.379C156.989 291.379 158.503 291.906 159.655 292.961C160.817 294.016 161.398 295.441 161.398 297.238ZM159.187 307.185C159.187 305.993 158.806 305.021 158.044 304.27C157.292 303.518 156.306 303.142 155.085 303.142C153.864 303.142 152.883 303.513 152.141 304.255C151.408 304.997 151.042 305.974 151.042 307.185C151.042 308.396 151.398 309.348 152.111 310.041C152.834 310.734 153.835 311.081 155.114 311.081C156.384 311.081 157.38 310.734 158.103 310.041C158.825 309.338 159.187 308.386 159.187 307.185ZM155.114 293.605C154.05 293.605 153.186 293.938 152.521 294.602C151.867 295.256 151.54 296.149 151.54 297.282C151.54 298.366 151.862 299.245 152.507 299.919C153.161 300.583 154.03 300.915 155.114 300.915C156.198 300.915 157.062 300.583 157.707 299.919C158.361 299.245 158.688 298.366 158.688 297.282C158.688 296.198 158.352 295.314 157.678 294.631C157.004 293.947 156.149 293.605 155.114 293.605ZM165.646 311.579C165.646 311.11 165.783 310.72 166.057 310.407C166.34 310.095 166.76 309.938 167.316 309.938C167.873 309.938 168.293 310.095 168.576 310.407C168.869 310.72 169.016 311.11 169.016 311.579C169.016 312.028 168.869 312.404 168.576 312.707C168.293 313.01 167.873 313.161 167.316 313.161C166.76 313.161 166.34 313.01 166.057 312.707C165.783 312.404 165.646 312.028 165.646 311.579ZM186.989 293.195L178.156 313H175.314L184.118 293.898H172.575V291.672H186.989V293.195ZM198.972 313H196.247V294.938L190.783 296.945V294.484L198.547 291.569H198.972V313Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_3:5" x="0" y="0" width="332" height="346" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="8" dy="9"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3:5"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3:5" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_3:5" x1="160" y1="0" x2="160" y2="333" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007E58"/>
+<stop offset="1" stop-color="#2F4D7A" stop-opacity="0.95"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+          
+          <div id="section" class="container mt-3">
+              <h4 >About</h4>
+              <p>Tin is a chemical element with the symbol Sn and atomic number 50. Tin is a silvery metal that characteristically has a faint yellow hue. Tin is soft enough to be cut with little force. <a href="https://en.wikipedia.org/wiki/Tin">Wikipedia</a></p>
+              <div class="mb-3"><img id="voice" title="click to listen" src="../static/images/loud-speaker.png" onclick="mytext()" height="30px" width="30px">
+              </div>
+              
+              <div style="border-top: solid 2px #dfe1e5;"><p style="font-weight:bold">Image </p> 
+                <img class="img-fluid" style="pointer-events: none;" src="https://d2cbg94ubxgsnp.cloudfront.net/Pictures/1024x536/0/1/6/140016_shutterstock_257107534.jpg" height="auto" width="auto"><br>
+                <p>Image link-https://d2cbg94ubxgsnp.cloudfront.net/Pictures/1024x536/0/1/6/140016_shutterstock_257107534.jpg</p>
+              </div>
+
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Symbol- </span>Sn</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic mass- </span> 118.71 u</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic number- </span>50</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered- </span>around 35th century BC</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered by- </span> <a  href="#">  NA</a>  </p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Electrons per shell- </span>2, 8, 18, 18, 4</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Oxidation states- </span>  −4, −3, −2, −1, 0, +1, +2, +3, +4 (an amphoteric oxide)</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Group- </span>group 14 (carbon group)</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Appearance - </span>silvery-white (beta, β) or gray (alpha, α)</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Van der Waals radius - </span>217 pm</p></div>
+
+
+
+
+
+
+
+      </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+
+      
+
+      
+      
+    </div>
+
+
+    {% include "base.html" %}
+    {% block footer %}
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+   <script>
+      function mytext()
+      {
+          
+          var msg = new SpeechSynthesisUtterance();  
+          msg.text ="Tin is a chemical element with the symbol S n and atomic number 50. Tin is a silvery metal that characteristically has a faint yellow hue. "; 
+          msg.lang = 'hi-IN';
+          speechSynthesis.speak(msg);
+
+      }
+    
+   </script>
+  </body>
+</html>

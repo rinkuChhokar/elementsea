@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Curium</title>
+
+    <style>
+
+      a{
+        text-decoration: none;
+      }
+      
+      #div1{
+        background-color: #242424;
+
+      }
+
+      #div1 h3{
+        color: white;
+      }
+
+      #maindiv{
+        padding-top: 90px;
+
+      }
+
+      #section{
+        border: solid 2px #dfe1e5;
+      }
+
+      #footer{
+        background-color:#242424 ;
+        
+      }
+
+      #voice:hover{
+        cursor: pointer;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    {% include "header1.html" %}
+    {% block header %}
+    {% endblock %}
+
+    <div id="maindiv" class="container shadow mb-5">
+
+      <div class="d-flex justify-content-center">
+       <svg width="332" height="346" viewBox="0 0 332 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_44:32)">
+<rect width="320" height="333" fill="url(#paint0_linear_44:32)"/>
+<path d="M37.2114 42.5C36.4562 43.3984 35.5513 44.1211 34.4966 44.668C33.4549 45.2148 32.3091 45.4883 31.0591 45.4883C29.4185 45.4883 27.9862 45.0846 26.7622 44.2773C25.5513 43.4701 24.6138 42.3372 23.9497 40.8789C23.2856 39.4076 22.9536 37.7865 22.9536 36.0156C22.9536 34.1146 23.3117 32.4023 24.0278 30.8789C24.757 29.3555 25.7856 28.1901 27.1138 27.3828C28.4419 26.5755 29.9914 26.1719 31.7622 26.1719C34.5747 26.1719 36.7882 27.2266 38.4028 29.3359C40.0304 31.4323 40.8442 34.2969 40.8442 37.9297V38.9844C40.8442 44.5182 39.7505 48.5612 37.563 51.1133C35.3755 53.6523 32.0747 54.9544 27.6606 55.0195H26.9575V51.9727H27.7192C30.701 51.9206 32.9927 51.1458 34.5942 49.6484C36.1958 48.138 37.0682 45.7552 37.2114 42.5ZM31.645 42.5C32.856 42.5 33.9692 42.1289 34.9849 41.3867C36.0135 40.6445 36.7622 39.7266 37.231 38.6328V37.1875C37.231 34.8177 36.7166 32.8906 35.688 31.4062C34.6593 29.9219 33.3573 29.1797 31.7817 29.1797C30.1932 29.1797 28.9172 29.7917 27.9536 31.0156C26.9901 32.2266 26.5083 33.8281 26.5083 35.8203C26.5083 37.7604 26.9705 39.362 27.895 40.625C28.8325 41.875 30.0825 42.5 31.645 42.5ZM60.0044 26.543V29.6094H59.3403C56.5278 29.6615 54.2882 30.4948 52.6216 32.1094C50.9549 33.724 49.9914 35.9961 49.731 38.9258C51.2284 37.207 53.2726 36.3477 55.8638 36.3477C58.3377 36.3477 60.3104 37.2201 61.7817 38.9648C63.2661 40.7096 64.0083 42.9622 64.0083 45.7227C64.0083 48.6523 63.2075 50.9961 61.606 52.7539C60.0174 54.5117 57.882 55.3906 55.1997 55.3906C52.4784 55.3906 50.2713 54.349 48.5786 52.2656C46.8859 50.1693 46.0396 47.474 46.0396 44.1797V42.793C46.0396 37.5586 47.1528 33.5612 49.3794 30.8008C51.619 28.0273 54.9458 26.6081 59.3599 26.543H60.0044ZM55.2583 39.3555C54.0213 39.3555 52.882 39.7266 51.8403 40.4688C50.7987 41.2109 50.076 42.1419 49.6724 43.2617V44.5898C49.6724 46.9336 50.1997 48.8216 51.2544 50.2539C52.3091 51.6862 53.6242 52.4023 55.1997 52.4023C56.8273 52.4023 58.1034 51.8034 59.0278 50.6055C59.9653 49.4076 60.4341 47.8385 60.4341 45.8984C60.4341 43.9453 59.9588 42.3698 59.0083 41.1719C58.0708 39.9609 56.8208 39.3555 55.2583 39.3555ZM68.7349 53.1055C68.7349 52.4805 68.9172 51.9596 69.2817 51.543C69.6593 51.1263 70.2192 50.918 70.9614 50.918C71.7036 50.918 72.2635 51.1263 72.6411 51.543C73.0317 51.9596 73.2271 52.4805 73.2271 53.1055C73.2271 53.7044 73.0317 54.2057 72.6411 54.6094C72.2635 55.013 71.7036 55.2148 70.9614 55.2148C70.2192 55.2148 69.6593 55.013 69.2817 54.6094C68.9172 54.2057 68.7349 53.7044 68.7349 53.1055Z" fill="white"/>
+<path d="M128.094 171.883C126.336 186.922 120.77 198.543 111.395 206.746C102.085 214.884 89.6823 218.953 74.1875 218.953C57.3906 218.953 43.9141 212.931 33.7578 200.887C23.6667 188.842 18.6211 172.729 18.6211 152.547V138.875C18.6211 125.659 20.9648 114.038 25.6523 104.012C30.4049 93.9857 37.1107 86.3034 45.7695 80.9648C54.4284 75.5612 64.4544 72.8594 75.8477 72.8594C90.9518 72.8594 103.061 77.0911 112.176 85.5547C121.29 93.9531 126.596 105.607 128.094 120.516H109.246C107.618 109.188 104.07 100.984 98.6016 95.9062C93.1979 90.8281 85.6133 88.2891 75.8477 88.2891C63.8685 88.2891 54.4609 92.7161 47.625 101.57C40.8542 110.424 37.4688 123.022 37.4688 139.363V153.133C37.4688 168.562 40.6914 180.835 47.1367 189.949C53.582 199.064 62.599 203.621 74.1875 203.621C84.6042 203.621 92.5794 201.277 98.1133 196.59C103.712 191.837 107.423 183.602 109.246 171.883H128.094ZM167.938 111.336L168.426 123.055C176.173 113.94 186.622 109.383 199.773 109.383C214.552 109.383 224.611 115.047 229.949 126.375C233.465 121.297 238.022 117.195 243.621 114.07C249.285 110.945 255.958 109.383 263.641 109.383C286.818 109.383 298.602 121.655 298.992 146.199V217H280.926V147.273C280.926 139.721 279.201 134.09 275.75 130.379C272.299 126.603 266.505 124.715 258.367 124.715C251.661 124.715 246.095 126.733 241.668 130.77C237.241 134.741 234.669 140.112 233.953 146.883V217H215.789V147.762C215.789 132.397 208.27 124.715 193.23 124.715C181.382 124.715 173.276 129.76 168.914 139.852V217H150.848V111.336H167.938Z" fill="white"/>
+<path d="M109.273 261.721C108.834 265.48 107.442 268.386 105.099 270.437C102.771 272.471 99.6706 273.488 95.7969 273.488C91.5977 273.488 88.2285 271.983 85.6895 268.972C83.1667 265.961 81.9053 261.932 81.9053 256.887V253.469C81.9053 250.165 82.4912 247.259 83.6631 244.753C84.8512 242.246 86.5277 240.326 88.6924 238.991C90.8571 237.64 93.3636 236.965 96.2119 236.965C99.988 236.965 103.015 238.023 105.294 240.139C107.573 242.238 108.899 245.152 109.273 248.879H104.562C104.155 246.047 103.268 243.996 101.9 242.727C100.549 241.457 98.6533 240.822 96.2119 240.822C93.2171 240.822 90.8652 241.929 89.1562 244.143C87.4635 246.356 86.6172 249.506 86.6172 253.591V257.033C86.6172 260.891 87.4229 263.959 89.0342 266.237C90.6455 268.516 92.8997 269.655 95.7969 269.655C98.401 269.655 100.395 269.069 101.778 267.897C103.178 266.709 104.106 264.65 104.562 261.721H109.273ZM131.295 270.388C129.537 272.455 126.957 273.488 123.556 273.488C120.74 273.488 118.591 272.674 117.11 271.047C115.646 269.403 114.905 266.978 114.889 263.771V246.584H119.405V263.649C119.405 267.653 121.033 269.655 124.288 269.655C127.739 269.655 130.034 268.369 131.173 265.798V246.584H135.689V273H131.393L131.295 270.388ZM155.343 250.637C154.659 250.523 153.919 250.466 153.121 250.466C150.159 250.466 148.149 251.727 147.091 254.25V273H142.574V246.584H146.969L147.042 249.636C148.523 247.276 150.623 246.096 153.341 246.096C154.22 246.096 154.887 246.21 155.343 246.438V250.637ZM164.425 273H159.908V246.584H164.425V273ZM159.542 239.577C159.542 238.845 159.762 238.226 160.201 237.722C160.657 237.217 161.324 236.965 162.203 236.965C163.082 236.965 163.749 237.217 164.205 237.722C164.661 238.226 164.889 238.845 164.889 239.577C164.889 240.31 164.661 240.92 164.205 241.408C163.749 241.896 163.082 242.141 162.203 242.141C161.324 242.141 160.657 241.896 160.201 241.408C159.762 240.92 159.542 240.31 159.542 239.577ZM187.984 270.388C186.227 272.455 183.647 273.488 180.245 273.488C177.429 273.488 175.281 272.674 173.8 271.047C172.335 269.403 171.594 266.978 171.578 263.771V246.584H176.095V263.649C176.095 267.653 177.722 269.655 180.978 269.655C184.428 269.655 186.723 268.369 187.862 265.798V246.584H192.379V273H188.082L187.984 270.388ZM203.512 246.584L203.634 249.514C205.571 247.235 208.183 246.096 211.471 246.096C215.165 246.096 217.68 247.512 219.015 250.344C219.894 249.074 221.033 248.049 222.433 247.268C223.849 246.486 225.517 246.096 227.438 246.096C233.232 246.096 236.178 249.164 236.275 255.3V273H231.759V255.568C231.759 253.68 231.327 252.272 230.465 251.345C229.602 250.401 228.154 249.929 226.119 249.929C224.443 249.929 223.051 250.433 221.944 251.442C220.838 252.435 220.195 253.778 220.016 255.471V273H215.475V255.69C215.475 251.849 213.595 249.929 209.835 249.929C206.873 249.929 204.846 251.19 203.756 253.713V273H199.239V246.584H203.512Z" fill="white"/>
+<path d="M150.747 313H136.772V311.052L144.155 302.849C145.249 301.608 146.001 300.603 146.411 299.831C146.831 299.05 147.041 298.244 147.041 297.414C147.041 296.301 146.704 295.388 146.03 294.675C145.356 293.962 144.458 293.605 143.335 293.605C141.987 293.605 140.938 293.991 140.186 294.763C139.443 295.524 139.072 296.589 139.072 297.956H136.362C136.362 295.993 136.992 294.406 138.252 293.195C139.521 291.984 141.216 291.379 143.335 291.379C145.317 291.379 146.885 291.901 148.037 292.946C149.189 293.981 149.766 295.363 149.766 297.092C149.766 299.191 148.428 301.691 145.752 304.592L140.039 310.788H150.747V313ZM165.059 305.837H168.018V308.049H165.059V313H162.334V308.049H152.622V306.452L162.173 291.672H165.059V305.837ZM155.698 305.837H162.334V295.378L162.012 295.964L155.698 305.837ZM184.233 293.195L175.4 313H172.559L181.362 293.898H169.819V291.672H184.233V293.195Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_44:32" x="0" y="0" width="332" height="346" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="8" dy="9"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_44:32"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_44:32" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_44:32" x1="160" y1="0" x2="160" y2="333" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007E58"/>
+<stop offset="1" stop-color="#2F4D7A" stop-opacity="0.95"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+          
+          <div id="section" class="container mt-3">
+              <h4 >About</h4>
+              <p>Curium is a transuranic radioactive chemical element with the symbol Cm and atomic number 96. This element of the actinide series was named after Marie and Pierre Curie, both known for their research on radioactivity. <a href="https://en.wikipedia.org/wiki/Curium">Wikipedia</a></p>
+              <div class="mb-3"><img id="voice" title="click to listen" src="../static/images/loud-speaker.png" onclick="mytext()" height="30px" width="30px">
+              </div>
+              
+              <div style="border-top: solid 2px #dfe1e5;"><p style="font-weight:bold">Image </p> 
+                <img class="img-fluid" style="pointer-events: none;" src="https://upload.wikimedia.org/wikipedia/en/6/69/Curium.jpg" height="auto" width="auto"><br>
+                <p>Image link-https://upload.wikimedia.org/wikipedia/en/6/69/Curium.jpg</p>
+              </div>
+
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Symbol- </span>Cm</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic mass- </span>247 u</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic number- </span>96</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered- </span>1944</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered by- </span> <a  href="https://en.wikipedia.org/wiki/Glenn_T._Seaborg">Glenn T. Seaborg
+              </a>, <a  href="https://en.wikipedia.org/wiki/Ralph_A._James">Ralph A. James
+              </a> and <a  href="https://en.wikipedia.org/wiki/Albert_Ghiorso">Albert Ghiorso
+              </a></p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Electrons per shell- </span>2, 8, 18, 32, 25, 9, 2</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Oxidation states- </span>  +3, +4, +5, +6 (an amphoteric oxide)</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Group- </span>group n/a</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Appearance - </span>silvery metallic, glows purple in the dark</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Van der Waals radius - </span>NA</p></div>
+
+
+
+
+
+
+
+      </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+
+      
+
+      
+      
+    </div>
+
+
+    {% include "base.html" %}
+    {% block footer %}
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+   <script>
+      function mytext()
+      {
+          
+          var msg = new SpeechSynthesisUtterance();  
+          msg.text ="Curium is a transuranic radioactive chemical element with the symbol C m and atomic number 96. This element of the actinide series was named after Marie and Pierre Curie, both known for their research on radioactivity."; 
+          msg.lang = 'hi-IN';
+          speechSynthesis.speak(msg);
+
+      }
+    
+   </script>
+  </body>
+</html>  

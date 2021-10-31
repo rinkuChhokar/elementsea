@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Fermium</title>
+
+    <style>
+
+      a{
+        text-decoration: none;
+      }
+      
+      #div1{
+        background-color: #242424;
+
+      }
+
+      #div1 h3{
+        color: white;
+      }
+
+      #maindiv{
+        padding-top: 90px;
+
+      }
+
+      #section{
+        border: solid 2px #dfe1e5;
+      }
+
+      #footer{
+        background-color:#242424 ;
+        
+      }
+
+      #voice:hover{
+        cursor: pointer;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    {% include "header1.html" %}
+    {% block header %}
+    {% endblock %}
+
+    <div id="maindiv" class="container shadow mb-5">
+
+      <div class="d-flex justify-content-center">
+       <svg width="332" height="346" viewBox="0 0 332 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_3:5)">
+<rect width="320" height="333" fill="url(#paint0_linear_3:5)"/>
+<path d="M35.2388 55H31.606V30.918L24.3208 33.5938V30.3125L34.6724 26.4258H35.2388V55ZM63.6567 42.8711C63.6567 47.1029 62.9341 50.2474 61.4888 52.3047C60.0435 54.362 57.7843 55.3906 54.7114 55.3906C51.6776 55.3906 49.4315 54.388 47.9731 52.3828C46.5148 50.3646 45.7596 47.3568 45.7075 43.3594V38.5352C45.7075 34.3555 46.4302 31.25 47.8755 29.2188C49.3208 27.1875 51.5864 26.1719 54.6724 26.1719C57.7323 26.1719 59.9849 27.1549 61.4302 29.1211C62.8755 31.0742 63.6177 34.0951 63.6567 38.1836V42.8711ZM60.0435 37.9297C60.0435 34.8698 59.6138 32.6432 58.7544 31.25C57.895 29.8438 56.5343 29.1406 54.6724 29.1406C52.8234 29.1406 51.4757 29.8372 50.6294 31.2305C49.783 32.6237 49.3468 34.7656 49.3208 37.6562V43.4375C49.3208 46.5104 49.7635 48.7826 50.6489 50.2539C51.5474 51.7122 52.9015 52.4414 54.7114 52.4414C56.4953 52.4414 57.8169 51.7513 58.6763 50.3711C59.5487 48.9909 60.0044 46.8164 60.0435 43.8477V37.9297ZM86.1177 42.8711C86.1177 47.1029 85.395 50.2474 83.9497 52.3047C82.5044 54.362 80.2453 55.3906 77.1724 55.3906C74.1385 55.3906 71.8924 54.388 70.4341 52.3828C68.9757 50.3646 68.2205 47.3568 68.1685 43.3594V38.5352C68.1685 34.3555 68.8911 31.25 70.3364 29.2188C71.7817 27.1875 74.0474 26.1719 77.1333 26.1719C80.1932 26.1719 82.4458 27.1549 83.8911 29.1211C85.3364 31.0742 86.0786 34.0951 86.1177 38.1836V42.8711ZM82.5044 37.9297C82.5044 34.8698 82.0747 32.6432 81.2153 31.25C80.356 29.8438 78.9953 29.1406 77.1333 29.1406C75.2843 29.1406 73.9367 29.8372 73.0903 31.2305C72.244 32.6237 71.8078 34.7656 71.7817 37.6562V43.4375C71.7817 46.5104 72.2244 48.7826 73.1099 50.2539C74.0083 51.7122 75.3625 52.4414 77.1724 52.4414C78.9562 52.4414 80.2778 51.7513 81.1372 50.3711C82.0096 48.9909 82.4653 46.8164 82.5044 43.8477V37.9297ZM91.1958 53.1055C91.1958 52.4805 91.3781 51.9596 91.7427 51.543C92.1203 51.1263 92.6802 50.918 93.4224 50.918C94.1646 50.918 94.7244 51.1263 95.1021 51.543C95.4927 51.9596 95.688 52.4805 95.688 53.1055C95.688 53.7044 95.4927 54.2057 95.1021 54.6094C94.7244 55.013 94.1646 55.2148 93.4224 55.2148C92.6802 55.2148 92.1203 55.013 91.7427 54.6094C91.3781 54.2057 91.1958 53.7044 91.1958 53.1055Z" fill="white"/>
+<path d="M111.922 154.207H52.2539V217H33.5039V74.8125H121.59V90.2422H52.2539V138.875H111.922V154.207ZM158.211 111.336L158.699 123.055C166.447 113.94 176.896 109.383 190.047 109.383C204.826 109.383 214.884 115.047 220.223 126.375C223.738 121.297 228.296 117.195 233.895 114.07C239.559 110.945 246.232 109.383 253.914 109.383C277.091 109.383 288.875 121.655 289.266 146.199V217H271.199V147.273C271.199 139.721 269.474 134.09 266.023 130.379C262.573 126.603 256.779 124.715 248.641 124.715C241.935 124.715 236.368 126.733 231.941 130.77C227.514 134.741 224.943 140.112 224.227 146.883V217H206.062V147.762C206.062 132.397 198.543 124.715 183.504 124.715C171.655 124.715 163.549 129.76 159.188 139.852V217H141.121V111.336H158.211Z" fill="white"/>
+<path d="M84.7305 257.302H69.8135V273H65.126V237.453H87.1475V241.311H69.8135V253.469H84.7305V257.302ZM102.479 273.488C98.8988 273.488 95.9854 272.316 93.7393 269.973C91.4932 267.613 90.3701 264.463 90.3701 260.524V259.694C90.3701 257.074 90.8665 254.738 91.8594 252.688C92.8685 250.62 94.2682 249.009 96.0586 247.854C97.8652 246.682 99.8184 246.096 101.918 246.096C105.352 246.096 108.021 247.227 109.926 249.489C111.83 251.752 112.782 254.991 112.782 259.206V261.086H94.8867C94.9518 263.69 95.7087 265.798 97.1572 267.409C98.6221 269.004 100.478 269.802 102.724 269.802C104.319 269.802 105.67 269.476 106.776 268.825C107.883 268.174 108.852 267.312 109.682 266.237L112.44 268.386C110.227 271.787 106.907 273.488 102.479 273.488ZM101.918 249.807C100.095 249.807 98.5651 250.474 97.3281 251.809C96.0911 253.127 95.3262 254.982 95.0332 257.375H108.266V257.033C108.135 254.738 107.517 252.964 106.41 251.711C105.303 250.441 103.806 249.807 101.918 249.807ZM130.8 250.637C130.116 250.523 129.376 250.466 128.578 250.466C125.616 250.466 123.606 251.727 122.548 254.25V273H118.031V246.584H122.426L122.499 249.636C123.98 247.276 126.08 246.096 128.798 246.096C129.677 246.096 130.344 246.21 130.8 246.438V250.637ZM139.223 246.584L139.345 249.514C141.282 247.235 143.894 246.096 147.182 246.096C150.876 246.096 153.391 247.512 154.726 250.344C155.604 249.074 156.744 248.049 158.144 247.268C159.56 246.486 161.228 246.096 163.148 246.096C168.943 246.096 171.889 249.164 171.986 255.3V273H167.47V255.568C167.47 253.68 167.038 252.272 166.176 251.345C165.313 250.401 163.865 249.929 161.83 249.929C160.154 249.929 158.762 250.433 157.655 251.442C156.549 252.435 155.906 253.778 155.727 255.471V273H151.186V255.69C151.186 251.849 149.306 249.929 145.546 249.929C142.584 249.929 140.557 251.19 139.467 253.713V273H134.95V246.584H139.223ZM183.729 273H179.213V246.584H183.729V273ZM178.847 239.577C178.847 238.845 179.066 238.226 179.506 237.722C179.962 237.217 180.629 236.965 181.508 236.965C182.387 236.965 183.054 237.217 183.51 237.722C183.965 238.226 184.193 238.845 184.193 239.577C184.193 240.31 183.965 240.92 183.51 241.408C183.054 241.896 182.387 242.141 181.508 242.141C180.629 242.141 179.962 241.896 179.506 241.408C179.066 240.92 178.847 240.31 178.847 239.577ZM207.289 270.388C205.531 272.455 202.951 273.488 199.55 273.488C196.734 273.488 194.586 272.674 193.104 271.047C191.64 269.403 190.899 266.978 190.883 263.771V246.584H195.399V263.649C195.399 267.653 197.027 269.655 200.282 269.655C203.733 269.655 206.028 268.369 207.167 265.798V246.584H211.684V273H207.387L207.289 270.388ZM222.816 246.584L222.938 249.514C224.875 247.235 227.488 246.096 230.775 246.096C234.47 246.096 236.985 247.512 238.319 250.344C239.198 249.074 240.338 248.049 241.737 247.268C243.153 246.486 244.822 246.096 246.742 246.096C252.536 246.096 255.482 249.164 255.58 255.3V273H251.063V255.568C251.063 253.68 250.632 252.272 249.77 251.345C248.907 250.401 247.458 249.929 245.424 249.929C243.747 249.929 242.356 250.433 241.249 251.442C240.142 252.435 239.499 253.778 239.32 255.471V273H234.779V255.69C234.779 251.849 232.899 249.929 229.14 249.929C226.177 249.929 224.151 251.19 223.061 253.713V273H218.544V246.584H222.816Z" fill="white"/>
+<path d="M150.747 313H136.772V311.052L144.155 302.849C145.249 301.608 146.001 300.603 146.411 299.831C146.831 299.05 147.041 298.244 147.041 297.414C147.041 296.301 146.704 295.388 146.03 294.675C145.356 293.962 144.458 293.605 143.335 293.605C141.987 293.605 140.938 293.991 140.186 294.763C139.443 295.524 139.072 296.589 139.072 297.956H136.362C136.362 295.993 136.992 294.406 138.252 293.195C139.521 291.984 141.216 291.379 143.335 291.379C145.317 291.379 146.885 291.901 148.037 292.946C149.189 293.981 149.766 295.363 149.766 297.092C149.766 299.191 148.428 301.691 145.752 304.592L140.039 310.788H150.747V313ZM154.863 302.307L155.947 291.672H166.875V294.177H158.247L157.603 299.992C158.647 299.377 159.834 299.069 161.162 299.069C163.105 299.069 164.648 299.714 165.791 301.003C166.934 302.282 167.505 304.016 167.505 306.203C167.505 308.4 166.909 310.134 165.718 311.403C164.536 312.663 162.881 313.293 160.752 313.293C158.867 313.293 157.329 312.771 156.138 311.726C154.946 310.681 154.268 309.235 154.102 307.39H156.665C156.831 308.61 157.266 309.533 157.969 310.158C158.672 310.773 159.6 311.081 160.752 311.081C162.012 311.081 162.998 310.651 163.711 309.792C164.434 308.933 164.795 307.746 164.795 306.232C164.795 304.807 164.404 303.664 163.623 302.805C162.852 301.936 161.821 301.501 160.532 301.501C159.351 301.501 158.423 301.76 157.749 302.277L157.031 302.863L154.863 302.307ZM184.233 293.195L175.4 313H172.559L181.362 293.898H169.819V291.672H184.233V293.195Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_3:5" x="0" y="0" width="332" height="346" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="8" dy="9"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3:5"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3:5" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_3:5" x1="160" y1="0" x2="160" y2="333" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007E58"/>
+<stop offset="1" stop-color="#2F4D7A" stop-opacity="0.95"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+          
+          <div id="section" class="container mt-3">
+              <h4 >About</h4>
+              <p>Fermium is a synthetic element with the symbol Fm and atomic number 100. It is an actinide and the heaviest element that can be formed by neutron bombardment of lighter elements, and hence the last element that can be prepared in macroscopic quantities, although pure fermium metal has not yet been prepared.<a href="https://en.wikipedia.org/wiki/Fermium">Wikipedia</a></p>
+              <div class="mb-3"><img id="voice" title="click to listen" src="../static/images/loud-speaker.png" onclick="mytext()" height="30px" width="30px">
+              </div>
+              
+              <div style="border-top: solid 2px #dfe1e5;"><p style="font-weight:bold">Image </p> 
+                <img class="img-fluid" style="pointer-events: none;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Fermium-Ytterbium_Alloy.jpg/220px-Fermium-Ytterbium_Alloy.jpg" height="auto" width="auto"><br>
+                <p>Image link-https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Fermium-Ytterbium_Alloy.jpg/220px-Fermium-Ytterbium_Alloy.jpg</p>
+              </div>
+
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Symbol- </span>Fm</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic mass- </span>257 u</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic number- </span>100</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered- </span>1952</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered by- </span> <a  href="https://en.wikipedia.org/wiki/Lawrence_Berkeley_National_Laboratory">Lawrence Berkeley National Laboratory
+              </a></p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Electrons per shell- </span>   2, 8, 18, 32, 30, 8, 2</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Oxidation states- </span>+2, +3</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Group- </span>group n/a</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Appearance - </span>NA</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Van der Waals radius - </span>NA</p></div>
+
+
+
+
+
+
+
+      </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+
+      
+
+      
+      
+    </div>
+
+
+    {% include "base.html" %}
+    {% block footer %}
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+   <script>
+      function mytext()
+      {
+          
+          var msg = new SpeechSynthesisUtterance();  
+          msg.text ="Fermium is a synthetic element with the symbol Fm and atomic number 100. It is an actinide and the heaviest element that can be formed by neutron bombardment of lighter elements."; 
+          msg.lang = 'hi-IN';
+          speechSynthesis.speak(msg);
+
+      }
+    
+   </script>
+  </body>
+</html>  

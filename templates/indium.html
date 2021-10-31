@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Indium</title>
+
+    <style>
+
+    a{
+      text-decoration: none;
+    }
+      
+      #div1{
+        background-color: #242424;
+
+      }
+
+      #div1 h3{
+        color: white;
+      }
+
+      #maindiv{
+        padding-top: 90px;
+
+      }
+
+      #section{
+        border: solid 2px #dfe1e5;
+      }
+
+      #footer{
+        background-color:#242424 ;
+        
+      }
+
+      #voice:hover{
+        cursor: pointer;
+      }
+
+
+
+
+    </style>
+  </head>
+  <body>
+    {% include "header1.html" %}
+    {% block header %}
+    {% endblock %}
+
+    <div id="maindiv" class="container shadow mb-5">
+
+      <div class="d-flex justify-content-center">
+        <svg width="332" height="346" viewBox="0 0 332 346" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_25:56)">
+<rect width="320" height="333" fill="url(#paint0_linear_25:56)"/>
+<path d="M38.6172 45.4492H42.5625V48.3984H38.6172V55H34.9844V48.3984H22.0352V46.2695L34.7695 26.5625H38.6172V45.4492ZM26.1367 45.4492H34.9844V31.5039L34.5547 32.2852L26.1367 45.4492ZM59.6719 42.5C58.9167 43.3984 58.0117 44.1211 56.957 44.668C55.9154 45.2148 54.7695 45.4883 53.5195 45.4883C51.8789 45.4883 50.4466 45.0846 49.2227 44.2773C48.0117 43.4701 47.0742 42.3372 46.4102 40.8789C45.7461 39.4076 45.4141 37.7865 45.4141 36.0156C45.4141 34.1146 45.7721 32.4023 46.4883 30.8789C47.2174 29.3555 48.2461 28.1901 49.5742 27.3828C50.9023 26.5755 52.4518 26.1719 54.2227 26.1719C57.0352 26.1719 59.2487 27.2266 60.8633 29.3359C62.4909 31.4323 63.3047 34.2969 63.3047 37.9297V38.9844C63.3047 44.5182 62.2109 48.5612 60.0234 51.1133C57.8359 53.6523 54.5352 54.9544 50.1211 55.0195H49.418V51.9727H50.1797C53.1615 51.9206 55.4531 51.1458 57.0547 49.6484C58.6562 48.138 59.5286 45.7552 59.6719 42.5ZM54.1055 42.5C55.3164 42.5 56.4297 42.1289 57.4453 41.3867C58.474 40.6445 59.2227 39.7266 59.6914 38.6328V37.1875C59.6914 34.8177 59.1771 32.8906 58.1484 31.4062C57.1198 29.9219 55.8177 29.1797 54.2422 29.1797C52.6536 29.1797 51.3776 29.7917 50.4141 31.0156C49.4505 32.2266 48.9688 33.8281 48.9688 35.8203C48.9688 37.7604 49.431 39.362 50.3555 40.625C51.293 41.875 52.543 42.5 54.1055 42.5ZM68.7344 53.1055C68.7344 52.4805 68.9167 51.9596 69.2812 51.543C69.6589 51.1263 70.2188 50.918 70.9609 50.918C71.7031 50.918 72.263 51.1263 72.6406 51.543C73.0312 51.9596 73.2266 52.4805 73.2266 53.1055C73.2266 53.7044 73.0312 54.2057 72.6406 54.6094C72.263 55.013 71.7031 55.2148 70.9609 55.2148C70.2188 55.2148 69.6589 55.013 69.2812 54.6094C68.9167 54.2057 68.7344 53.7044 68.7344 53.1055Z" fill="white"/>
+<path d="M113.621 217H94.8711V74.8125H113.621V217ZM162.254 111.336L162.84 124.617C170.913 114.461 181.46 109.383 194.48 109.383C216.811 109.383 228.074 121.98 228.27 147.176V217H210.203V147.078C210.138 139.461 208.38 133.829 204.93 130.184C201.544 126.538 196.238 124.715 189.012 124.715C183.152 124.715 178.009 126.277 173.582 129.402C169.155 132.527 165.704 136.629 163.23 141.707V217H145.164V111.336H162.254Z" fill="white"/>
+<path d="M92.1553 273H87.4678V237.453H92.1553V273ZM104.313 246.584L104.46 249.904C106.478 247.365 109.115 246.096 112.37 246.096C117.953 246.096 120.769 249.245 120.817 255.544V273H116.301V255.52C116.285 253.615 115.845 252.207 114.982 251.296C114.136 250.384 112.81 249.929 111.003 249.929C109.538 249.929 108.252 250.319 107.146 251.101C106.039 251.882 105.176 252.907 104.558 254.177V273H100.041V246.584H104.313ZM126.53 259.572C126.53 255.52 127.491 252.264 129.411 249.807C131.332 247.333 133.846 246.096 136.955 246.096C140.048 246.096 142.497 247.154 144.304 249.27V235.5H148.82V273H144.67L144.45 270.168C142.644 272.382 140.129 273.488 136.906 273.488C133.846 273.488 131.348 272.235 129.411 269.729C127.491 267.222 126.53 263.951 126.53 259.914V259.572ZM131.047 260.085C131.047 263.08 131.665 265.424 132.902 267.116C134.139 268.809 135.848 269.655 138.029 269.655C140.894 269.655 142.985 268.369 144.304 265.798V253.664C142.953 251.174 140.878 249.929 138.078 249.929C135.865 249.929 134.139 250.783 132.902 252.492C131.665 254.201 131.047 256.732 131.047 260.085ZM160.759 273H156.242V246.584H160.759V273ZM155.876 239.577C155.876 238.845 156.096 238.226 156.535 237.722C156.991 237.217 157.658 236.965 158.537 236.965C159.416 236.965 160.083 237.217 160.539 237.722C160.995 238.226 161.223 238.845 161.223 239.577C161.223 240.31 160.995 240.92 160.539 241.408C160.083 241.896 159.416 242.141 158.537 242.141C157.658 242.141 156.991 241.896 156.535 241.408C156.096 240.92 155.876 240.31 155.876 239.577ZM184.318 270.388C182.561 272.455 179.981 273.488 176.579 273.488C173.763 273.488 171.615 272.674 170.134 271.047C168.669 269.403 167.928 266.978 167.912 263.771V246.584H172.429V263.649C172.429 267.653 174.056 269.655 177.312 269.655C180.762 269.655 183.057 268.369 184.196 265.798V246.584H188.713V273H184.416L184.318 270.388ZM199.846 246.584L199.968 249.514C201.905 247.235 204.517 246.096 207.805 246.096C211.499 246.096 214.014 247.512 215.349 250.344C216.228 249.074 217.367 248.049 218.767 247.268C220.183 246.486 221.851 246.096 223.771 246.096C229.566 246.096 232.512 249.164 232.609 255.3V273H228.093V255.568C228.093 253.68 227.661 252.272 226.799 251.345C225.936 250.401 224.488 249.929 222.453 249.929C220.777 249.929 219.385 250.433 218.278 251.442C217.172 252.435 216.529 253.778 216.35 255.471V273H211.809V255.69C211.809 251.849 209.929 249.929 206.169 249.929C203.207 249.929 201.18 251.19 200.09 253.713V273H195.573V246.584H199.846Z" fill="white"/>
+<path d="M123.679 313H120.954V294.938L115.49 296.945V294.484L123.254 291.569H123.679V313ZM140.524 313H137.8V294.938L132.336 296.945V294.484L140.1 291.569H140.524V313ZM159.904 305.837H162.863V308.049H159.904V313H157.18V308.049H147.468V306.452L157.019 291.672H159.904V305.837ZM150.544 305.837H157.18V295.378L156.857 295.964L150.544 305.837ZM165.646 311.579C165.646 311.11 165.783 310.72 166.057 310.407C166.34 310.095 166.76 309.938 167.316 309.938C167.873 309.938 168.293 310.095 168.576 310.407C168.869 310.72 169.016 311.11 169.016 311.579C169.016 312.028 168.869 312.404 168.576 312.707C168.293 313.01 167.873 313.161 167.316 313.161C166.76 313.161 166.34 313.01 166.057 312.707C165.783 312.404 165.646 312.028 165.646 311.579ZM186.154 297.238C186.154 298.303 185.871 299.25 185.305 300.08C184.748 300.91 183.991 301.56 183.034 302.028C184.147 302.507 185.026 303.205 185.671 304.123C186.325 305.041 186.652 306.081 186.652 307.243C186.652 309.089 186.027 310.559 184.777 311.652C183.537 312.746 181.901 313.293 179.87 313.293C177.819 313.293 176.174 312.746 174.934 311.652C173.703 310.549 173.088 309.079 173.088 307.243C173.088 306.091 173.4 305.051 174.025 304.123C174.66 303.195 175.534 302.492 176.647 302.014C175.7 301.545 174.953 300.896 174.406 300.065C173.859 299.235 173.586 298.293 173.586 297.238C173.586 295.441 174.162 294.016 175.314 292.961C176.467 291.906 177.985 291.379 179.87 291.379C181.745 291.379 183.259 291.906 184.411 292.961C185.573 294.016 186.154 295.441 186.154 297.238ZM183.942 307.185C183.942 305.993 183.562 305.021 182.8 304.27C182.048 303.518 181.062 303.142 179.841 303.142C178.62 303.142 177.639 303.513 176.896 304.255C176.164 304.997 175.798 305.974 175.798 307.185C175.798 308.396 176.154 309.348 176.867 310.041C177.59 310.734 178.591 311.081 179.87 311.081C181.14 311.081 182.136 310.734 182.858 310.041C183.581 309.338 183.942 308.386 183.942 307.185ZM179.87 293.605C178.806 293.605 177.941 293.938 177.277 294.602C176.623 295.256 176.296 296.149 176.296 297.282C176.296 298.366 176.618 299.245 177.263 299.919C177.917 300.583 178.786 300.915 179.87 300.915C180.954 300.915 181.818 300.583 182.463 299.919C183.117 299.245 183.444 298.366 183.444 297.282C183.444 296.198 183.107 295.314 182.434 294.631C181.76 293.947 180.905 293.605 179.87 293.605ZM204.04 313H190.065V311.052L197.448 302.849C198.542 301.608 199.294 300.603 199.704 299.831C200.124 299.05 200.334 298.244 200.334 297.414C200.334 296.301 199.997 295.388 199.323 294.675C198.649 293.962 197.751 293.605 196.628 293.605C195.28 293.605 194.23 293.991 193.479 294.763C192.736 295.524 192.365 296.589 192.365 297.956H189.655C189.655 295.993 190.285 294.406 191.545 293.195C192.814 291.984 194.509 291.379 196.628 291.379C198.61 291.379 200.178 291.901 201.33 292.946C202.482 293.981 203.059 295.363 203.059 297.092C203.059 299.191 201.721 301.691 199.045 304.592L193.332 310.788H204.04V313Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_25:56" x="0" y="0" width="332" height="346" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="8" dy="9"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_25:56"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_25:56" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_25:56" x1="160" y1="0" x2="160" y2="333" gradientUnits="userSpaceOnUse">
+<stop stop-color="#007E58"/>
+<stop offset="1" stop-color="#2F4D7A" stop-opacity="0.95"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2"></div>
+
+        <div class="col-md-8">
+          
+          <div id="section" class="container mt-3">
+              <h4 >About</h4>
+              <p>Indium is a chemical element with the symbol In and atomic number 49. Indium is the softest metal that is not an alkali metal. It is a silvery-white metal that resembles tin in appearance. It is a post-transition metal that makes up 0.21 parts per million of the Earth's crust.   <a href="https://en.wikipedia.org/wiki/Indium">Wikipedia</a></p>
+              <div class="mb-3"><img id="voice" title="click to listen" src="../static/images/loud-speaker.png" onclick="mytext()" height="30px" width="30px">
+              </div>
+              
+              <div style="border-top: solid 2px #dfe1e5;"><p style="font-weight:bold">Image </p> 
+                <img class="img-fluid" style="pointer-events: none;" src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Indium.jpg" height="auto" width="auto"><br>
+                <p>Image link-https://upload.wikimedia.org/wikipedia/commons/b/b8/Indium.jpg</p>
+              </div>
+
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Symbol- </span>In</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic mass- </span> 114.818 u</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Atomic number- </span>49</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered- </span>1863</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Discovered by- </span> <a href="https://en.wikipedia.org/wiki/Ferdinand_Reich">  Ferdinand Reich</a>  </p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Electrons per shell- </span>2, 8, 18, 18, 3</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Oxidation states- </span>−5, −2, −1, +1, +2, +3 (an amphoteric oxide)</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Group- </span> group 13 (boron group)</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Appearance - </span> silvery lustrous gray</p></div>
+
+              <div style="border-top: solid 2px #dfe1e5 ;"><p><span style="font-weight:bold">Van der Waals radius - </span>193 pm</p></div>
+
+
+
+
+
+
+
+      </div>
+
+        </div>
+
+        <div class="col-md-2"></div>
+      </div>
+
+      
+
+      
+      
+    </div>
+
+
+    {% include "base.html" %}
+    {% block footer %}
+    {% endblock %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+   <script>
+      function mytext()
+      {
+          
+          var msg = new SpeechSynthesisUtterance();  
+          msg.text ="Indium is a chemical element with the symbol I n and atomic number 49. Indium is the softest metal that is not an alkali metal. "; 
+          msg.lang = 'hi-IN';
+          speechSynthesis.speak(msg);
+
+      }
+    
+   </script>
+  </body>
+</html>
