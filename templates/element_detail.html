@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% block title %}{{ el.name }} — Elementsea{% endblock %}
+
+{% block content %}
+
+{# ── Category color maps ── #}
+{% set cat_color = {
+  "alkali-metal":    "#ff6b6b",
+  "alkaline-earth":  "#ffa94d",
+  "transition-metal":"#a78bfa",
+  "post-transition": "#74c0fc",
+  "metalloid":       "#63e6be",
+  "nonmetal":        "#69db7c",
+  "noble-gas":       "#4dabf7",
+  "lanthanide":      "#f783ac",
+  "actinide":        "#ff8787",
+  "unknown":         "#868e96"
+} %}
+
+{% set cc = cat_color.get(el.category_class, "#868e96") %}
+
+<div class="es-detail">
+  <!-- Breadcrumb -->
+  <nav class="es-breadcrumb">
+    <a href="/">Table</a>
+    <span>/</span>
+    <span>{{ el.name }}</span>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="es-element-hero">
+    <div class="es-symbol-card" style="--cat-color:{{ cc }}; --cat-glow: {{ cc }}55">
+      <span class="card-num">{{ el.number }}</span>
+      <span class="card-symbol">{{ el.symbol }}</span>
+      <span class="card-name">{{ el.name }}</span>
+      <span class="card-mass">{{ el.atomic_mass }}</span>
+    </div>
+
+    <div class="es-element-meta">
+      <h1>{{ el.name }}</h1>
+      <span class="category-badge" style="--cat-color:{{ cc }}">{{ el.category }}</span>
+      
+      <p class="el-description" id="elDesc">
+        {{ el.description }}
+      </p>
+
+      <div style="display: flex; gap: 12px; margin-top: 8px;">
+        <button class="es-tts-btn" onclick="speakText()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+            <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+            <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182l-.707.707A3.489 3.489 0 0 1 9.025 8a3.489 3.489 0 0 1-1.025 2.475l.707.707z"/>
+            <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+          </svg>
+          Listen
+        </button>
+        <a href="{{ el.wikipedia_url }}" target="_blank" class="es-tts-btn">
+          Wikipedia
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Properties Grid -->
+  <section class="es-props-section">
+    <h2>Chemical Properties</h2>
+    <div class="es-props-grid">
+      <div class="es-prop-card">
+        <label class="prop-label">Atomic Number</label>
+        <div class="prop-value">{{ el.number }}</div>
+      </div>
+      <div class="es-prop-card">
+        <label class="prop-label">Symbol</label>
+        <div class="prop-value">{{ el.symbol }}</div>
+      </div>
+      <div class="es-prop-card">
+        <label class="prop-label">Atomic Mass</label>
+        <div class="prop-value">{{ el.atomic_mass }} u</div>
+      </div>
+      <div class="es-prop-card">
+        <label class="prop-label">Discovery</label>
+        <div class="prop-value">{{ el.discovered }}</div>
+      </div>
+      <div class="es-prop-card">
+        <label class="prop-label">Discovered By</label>
+        <div class="prop-value">{{ el.discovered_by }}</div>
+      </div>
+      <div class="es-prop-card">
+        <label class="prop-label">Electronic Shells</label>
+        <div class="prop-value">{{ el.electrons_per_shell }}</div>
+      </div>
+      <div class="es-prop-card">
+        <label class="prop-label">Appearance</label>
+        <div class="prop-value">{{ el.appearance }}</div>
+      </div>
+      <div class="es-prop-card">
+        <label class="prop-label">Oxidation States</label>
+        <div class="prop-value">{{ el.oxidation_states }}</div>
+      </div>
+      <div class="es-prop-card">
+        <label class="prop-label">Van der Waals Radius</label>
+        <div class="prop-value">{{ el.van_der_waals_radius }}</div>
+      </div>
+      <div class="es-prop-card">
+        <label class="prop-label">Period / Group</label>
+        <div class="prop-value">{{ el.period }} / {{ el.group }}</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Section -->
+  {% if el.image_url and el.image_url != "N/A" %}
+  <section class="es-element-image">
+    <h2>Visual Sample</h2>
+    <img src="{{ el.image_url }}" alt="{{ el.name }}" loading="lazy">
+  </section>
+  {% endif %}
+
+  <!-- Pagination -->
+  <nav class="es-el-nav">
+    {% if prev_el %}
+    <a href="/element/{{ prev_el.symbol | lower }}" class="es-el-nav-btn prev">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+      </svg>
+      <div>
+        <div style="font-size: 0.7rem; color: var(--text-muted);">Previous</div>
+        <div class="btn-symbol">{{ prev_el.symbol }}</div>
+      </div>
+    </a>
+    {% else %}
+    <div style="flex:1"></div>
+    {% endif %}
+
+    {% if next_el %}
+    <a href="/element/{{ next_el.symbol | lower }}" class="es-el-nav-btn next">
+      <div>
+        <div style="font-size: 0.7rem; color: var(--text-muted);">Next</div>
+        <div class="btn-symbol">{{ next_el.symbol }}</div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </a>
+    {% else %}
+    <div style="flex:1"></div>
+    {% endif %}
+  </nav>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+  function speakText() {
+    const text = document.getElementById('elDesc').innerText;
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    window.speechSynthesis.speak(utterance);
+  }
+</script>
+{% endblock %}
